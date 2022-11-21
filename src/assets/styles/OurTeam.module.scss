@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    background-color: #263138;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ourTeam {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .description {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            h1 {
+                color: #fff;
+
+                span {
+                    color: #FFB281;
+                }
+            }
+
+            p {
+                color: #fff;
+                width: 80%;
+                opacity: 0.6;
+            }
+        }
+
+        .photos {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 60%;
+            }
+
+            .John {
+                transform: translate(0, -110px);
+            }
+
+            .Jane {
+                transform: translate(-380px, 70px);
+            }
+
+            .Matthew {
+                transform: translate(-35px, -80px);
+
+            }
+        }
+    }
+}

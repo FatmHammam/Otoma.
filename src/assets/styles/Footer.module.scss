@@ -1,0 +1,145 @@
+.container {
+    width: 100%;
+    background-color: #263138;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer {
+        width: 80%;
+        min-height: 50vh;
+        background-image: url("../images/Footer.png");
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 100px;
+            margin-top: 50px;
+
+            h1 {
+                color: #fff;
+                margin-bottom: 0;
+
+                span {
+                    color: #FFB281;
+                }
+            }
+
+            p {
+                color: #fff;
+                margin-top: 2px;
+                font-size: 12px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+        }
+
+        .partner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 70px;
+            margin-top: 50px;
+
+
+            h3 {
+                color: #fff;
+                margin-bottom: 0;
+
+                span {
+                    margin-left: 5px;
+                }
+            }
+
+            p {
+                color: #8790A2;
+                margin: 0;
+                margin-bottom: 5px;
+            }
+        }
+
+        .menu {
+            margin-left: 50px;
+            margin-top: 50px;
+
+
+            h3 {
+                color: #fff;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: #8790A2;
+                margin: 2px;
+            }
+        }
+
+        .join {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 100px;
+            margin-top: 50px;
+
+            h3 {
+                color: #fff;
+            }
+
+            p {
+                width: 70%;
+                color: #8790A2;
+            }
+
+            .enterEmail {
+                width: 75%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 20px;
+                border: 1px solid #5C6BC0;
+                padding: 10px 0;
+
+                p {
+                    color: #8E8E8E;
+                    font-size: 12px;
+                    margin-left: 15px;
+                }
+
+                .Arrow {
+                    transform: translateX(-10px);
+                }
+            }
+        }
+    }
+
+    .Payment {
+        height: 35px;
+        transform: translateY(-50px);
+    }
+
+    .copyRights {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        h3 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 14px;
+        }
+    }
+}

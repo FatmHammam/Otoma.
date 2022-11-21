@@ -1,0 +1,201 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #263138;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Shape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -230px center;
+
+    .info {
+        width: 50%;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .signIn {
+            transform: translate(200px, -130px);
+            color: #fff;
+
+            span {
+                color: #75E9BF;
+            }
+        }
+
+        .Back {
+            transform: translate(-400px, -100px);
+            width: 20px;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 0;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 50px;
+
+            span {
+                color: #FFB281;
+            }
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            width: 365px;
+            background-color: #4E5760;
+            border: 1px solid #fff;
+            border-radius: 15px;
+            margin-top: 20px;
+
+            span {
+                img {
+                    width: 15px;
+                    margin-right: 5px;
+                    margin-left: 10px;
+                }
+            }
+
+            input {
+                margin-left: 5px;
+                background-color: #4E5760;
+                border: none;
+                width: 100%;
+            }
+
+            input::placeholder {
+                color: #fff;
+                opacity: 0.8;
+            }
+
+        }
+
+        .policy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+
+            .check {
+                margin-right: 15px;
+                -webkit-appearance: inherit;
+                background-color: #494F55;
+                border: 1px solid #cacece;
+                padding: 5px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            .terms {
+                width: 53%;
+                font-size: 13px;
+                opacity: 0.6;
+                color: #fff;
+            }
+        }
+
+        .fullName {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .fname,
+            .userName {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 10px;
+                width: 150px;
+                background-color: #4E5760;
+                border: 1px solid #fff;
+                border-radius: 15px;
+                margin-bottom: 5px;
+
+                input {
+                    margin-left: 5px;
+                    background-color: #4E5760;
+                    border: none;
+                    width: 100%;
+                    margin-left: 15px;
+                }
+
+                input::placeholder {
+                    color: #fff;
+                    opacity: 0.8;
+                }
+            }
+
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #8790A2;
+                margin: 10px;
+
+            }
+
+            button {
+                width: 145px;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                background-color: #8668F2;
+                color: #fff;
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .invite {
+        width: 30%;
+        min-height: 100vh;
+        background-image: url('../images/invite.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        h1 {
+            margin-top: 450px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        p {
+            margin: 0;
+            color: #fff;
+        }
+
+        button {
+            width: 145px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #FFB281;
+            color: #fff;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+    }
+}

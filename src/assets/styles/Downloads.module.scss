@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    background-color: #263138;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .download {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: #242834;
+        padding: 50px;
+        margin-bottom: 50px;
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 90px;
+            margin-top: 0;
+
+            h1 {
+                color: #fff;
+                font-size: 40px;
+                margin-bottom: 0;
+                margin: 0;
+
+                span {
+                    color: #FFB281;
+                }
+            }
+
+            p {
+                color: #8790A2;
+                font-size: 13px;
+                margin-bottom: 100px;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: 400px;
+        }
+    }
+
+    .examples {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(0, -240px);
+
+        .example {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #1B1B26;
+            border-radius: 20px;
+
+            .exampleContainer {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                background-color: #1B1B26;
+
+                h1 {
+                    color: #fff;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    color: #fff;
+                    opacity: 0.6;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                }
+
+                .artists {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 35px;
+                        margin-right: 20px;
+                        margin-bottom: 50px;
+
+                    }
+
+                    h5 {
+                        margin: 0;
+                        color: #fff;
+                    }
+
+                    p {
+                        opacity: 0.4;
+                        margin: 0;
+                        margin-bottom: 50px;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
