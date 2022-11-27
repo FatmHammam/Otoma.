@@ -24,8 +24,10 @@ function ContactUs() {
                                 <input type="text" placeholder="James" />
                             </div>
                         </div>
-                        <label>Mail</label>
-                        <input type="text" placeholder="matthew.james@gmail.com" />
+                        <div className={styles.mailAndMessage}>
+                            <label>Mail</label>
+                            <input type="text" placeholder="matthew.james@gmail.com" />
+                        </div>
                         <p>  Why do you contact us ? </p>
                         <div className={styles.contactReasons}>
                             <div className={styles.round}>
@@ -50,12 +52,12 @@ function ContactUs() {
                                 <input type="checkbox" id="checkbox4" />
                                 <label htmlFor="checkbox4"></label>
                             </div>
-
                             <span>Other</span>
-
                         </div>
-                        <label>Message</label>
-                        <textarea placeholder="Write your message…" />
+                        <div className={styles.mailAndMessage}>
+                            <label>Message</label>
+                            <textarea placeholder="Write your message…" />
+                        </div>
                         <div className={styles.send}>
                             <button>Send my message</button>
                         </div>

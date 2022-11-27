@@ -5,7 +5,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 50px;
+        padding-top: 130px;
+
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+        }
 
         .contactInfo {
             width: 60%;
@@ -13,6 +18,11 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+
+            @media (max-width: 1100px) {
+                width: 100%;
+                align-items: center;
+            }
 
             h1 {
                 color: #fff;
@@ -38,6 +48,10 @@
                 align-items: flex-start;
                 justify-content: space-around;
 
+                @media (max-width: 1100px) {
+                    align-items: center;
+                }
+
                 .name {
                     width: 65%;
                     display: flex;
@@ -57,6 +71,10 @@
                             border-radius: 15px;
                             padding: 13px 30px;
                             margin-bottom: 20px;
+
+                            @media (max-width: 1300px) {
+                                width: 95%;
+                            }
                         }
                     }
                 }
@@ -68,28 +86,82 @@
                     margin-left: 30px;
                     margin-top: 20px;
                     font-weight: 600;
+
+                    @media (max-width: 800px) {
+                        margin-left: 0;
+                    }
+
                 }
 
-                input {
-                    width: 64%;
-                    background-color: #4C565D;
-                    border: 1px solid #fff;
-                    border-radius: 15px;
-                    padding: 13px 30px;
-                    margin-bottom: 20px;
+                .mailAndMessage {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-around;
+
+                    @media (max-width: 1100px) {
+                        width: 65%;
+                        margin: 0 auto;
+                    }
+
+                    input {
+                        width: 65%;
+                        background-color: #4C565D;
+                        border: 1px solid #fff;
+                        border-radius: 15px;
+                        padding: 13px 30px;
+                        margin-bottom: 20px;
+
+                        @media (max-width: 1100px) {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    input::placeholder {
+                        color: #C5C8CB;
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+
+
+                    textarea {
+                        width: 66%;
+                        border-radius: 20px;
+                        resize: none;
+                        background-color: #4C565D;
+                        padding: 20px;
+                        border: 1px solid #fff;
+
+                        @media (max-width: 1100px) {
+                            width: 100%;
+                        }
+                    }
+
+                    textarea::placeholder {
+                        color: #C5C8CB;
+                        font-weight: 600;
+                        font-size: 12px;
+                        margin-left: 200px;
+                    }
+
                 }
 
-                input::placeholder {
-                    color: #C5C8CB;
-                    font-weight: 600;
-                    font-size: 12px;
+                p {
+                    width: 65%;
+                    margin-top: 40px;
                 }
 
                 .contactReasons {
-                    width: 72%;
+                    width: 65%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+
+                    @media (max-width: 800px) {
+                        flex-direction: column;
+                    }
 
                     .round {
                         position: relative;
@@ -102,10 +174,14 @@
                         cursor: pointer;
                         height: 15px;
                         left: 0;
-                        top: -7px;
+                        top: -10px;
                         position: absolute;
                         width: 15px;
                         transform: translateX(-25px);
+
+                        @media (max-width: 800px) {
+                            transform: translateX(0);
+                        }
                     }
 
                     .round label:after {
@@ -137,27 +213,11 @@
                     span {
                         color: #fff;
                     }
-
                 }
 
-                textarea {
-                    width: 67%;
-                    border-radius: 20px;
-                    resize: none;
-                    background-color: #4C565D;
-                    padding: 20px;
-                    border: 1px solid #fff;
-                }
-
-                textarea::placeholder {
-                    color: #C5C8CB;
-                    font-weight: 600;
-                    font-size: 12px;
-                    margin-left: 200px;
-                }
 
                 .send {
-                    width: 73%;
+                    width: 66%;
                     display: flex;
                     align-items: flex-end;
                     justify-content: flex-end;
@@ -171,6 +231,11 @@
                         border: none;
                         font-weight: bold;
                         margin-top: 40px;
+
+                        @media (max-width: 900px) {
+                            width: 140px;
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -179,17 +244,50 @@
         .resources {
             width: 24%;
             background-image: url("../images/Bg.png");
-            background-size: 365px 475px;
+            background-size: 365px 495px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 20px 0;
+
+            @media (max-width: 1500px) {
+                margin-top: 100px;
+                background-size: cover;
+                padding: 10px 0;
+                background-repeat: no-repeat;
+                border-bottom-right-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom: 4px solid #8668F2;
+                margin-bottom: 50px;
+            }
+
+            @media (max-width: 1100px) {
+                width: 40%;
+                border-right: none;
+            }
+
+            @media (max-width: 870px) {
+                border-right: 4px solid #8668F2;
+            }
 
             h5 {
                 color: #fff;
                 font-size: 18px;
                 font-weight: 500;
                 margin-bottom: 10px;
+
+                @media (max-width: 1500px) {
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+
+                @media (max-width: 1100px) {
+                    font-size: 10px;
+                    margin-bottom: 0;
+                }
             }
 
             .community,
@@ -206,6 +304,21 @@
                 background-color: #4C565D;
                 margin-bottom: 20px;
 
+                @media (max-width: 1500px) {
+                    padding: 0;
+                    margin-bottom: 5px;
+                    width: 50%;
+                }
+
+                @media (max-width: 1000px) {
+                    width: 70%;
+                    margin-bottom: 1px;
+                }
+
+                @media (max-width: 1100px) {
+                    width: 60%;
+                }
+
                 img {
                     width: 10%;
                 }
@@ -214,15 +327,40 @@
                 .paper {
                     width: 70%;
 
+                    @media (max-width: 1000px) {
+                        width: 50%;
+                    }
+
                     h5 {
                         color: #fff;
                         margin-top: 8px;
+
+                        @media (max-width: 1000px) {
+                            font-size: 10px;
+                            margin: 0;
+                            margin-top: 5px;
+                        }
                     }
 
                     p {
                         color: #8790A2;
                         margin-top: 0;
                         font-size: 12px;
+
+                        @media (max-width: 1500px) {
+                            font-size: 8px;
+                            margin-top: 5px;
+                        }
+
+                        @media (max-width: 1000px) {
+                            font-weight: 600;
+                            margin: 0;
+                        }
+
+                        @media (max-width: 1100px) {
+                            width: 100%;
+                        }
+
                     }
                 }
             }
@@ -235,6 +373,11 @@
                 img {
                     width: 15px;
                     margin: 0 20px;
+
+                    @media (max-width: 1500px) {
+                        width: 10px;
+                        margin: 0 5px;
+                    }
                 }
             }
         }

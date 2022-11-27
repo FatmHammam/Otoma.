@@ -7,7 +7,12 @@
     align-items: center;
     justify-content: space-around;
 
+    @media (max-width: 750px) {
+        min-height: 20vh;
+    }
+
     .title {
+
         h1 {
             color: #fff;
             text-align: center;
@@ -18,47 +23,62 @@
         }
     }
 
-    .links {
+    .collapsedContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
-        a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 20px;
+        @media (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
 
-        .overview {
-            font-weight: bold;
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                margin: 0 20px;
+            }
+
+            .overview {
+                font-weight: bold;
+            }
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                margin-top: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                margin: 0 20px;
+            }
+
+            img {
+                margin: 0 20px;
+            }
+
+            button {
+                width: 100px;
+                background-color: transparent;
+                padding: 8px;
+                border-radius: 20px;
+                color: #75E9BF;
+                border: 1px solid #75E9BF;
+                font-weight: bold;
+                margin-left: 20px;
+            }
         }
     }
-
-    .login {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 20px;
-        }
-
-        img {
-            margin: 0 20px;
-        }
-
-        button {
-            width: 100px;
-            background-color: transparent;
-            padding: 8px;
-            border-radius: 20px;
-            color: #75E9BF;
-            border: 1px solid #75E9BF;
-            font-weight: bold;
-            margin-left: 20px;
-        }
-    }
-
 }

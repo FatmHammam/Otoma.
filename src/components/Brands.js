@@ -11,7 +11,7 @@ function Brands() {
         <div className={styles.container}>
             <p>Used by trusted brands and thousands of designers worldwide.</p>
             <div className={styles.brands}>
-                <img src={b1} style={{ width: "50px", height: "40px" }} />
+                <img src={b1} className={styles.b1} />
                 <img src={b2} />
                 <img src={b3} />
                 <img src={b4} />

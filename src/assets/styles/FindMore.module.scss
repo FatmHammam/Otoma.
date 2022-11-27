@@ -1,11 +1,22 @@
 .container {
     width: 100%;
-    // margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #263138;
     margin-top: 0;
+    min-height: 100vh;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 120vh;
+    }
 
     .title {
         display: flex;
@@ -28,6 +39,10 @@
             width: 55%;
             color: #fff;
             opacity: 0.7;
+
+            @media (max-width: 750px) {
+                margin-left: 30px;
+            }
         }
 
         .buttons {
@@ -45,6 +60,11 @@
                 border: none;
                 margin-right: 10px;
                 font-weight: bold;
+
+                @media (max-width: 750px) {
+                    width: 120px;
+                    padding: 8px;
+                }
             }
 
             .video {
@@ -58,6 +78,11 @@
                 border-radius: 20px;
                 padding: 10px;
                 font-weight: bold;
+
+                @media (max-width: 750px) {
+                    width: 130px;
+                    padding: 8px;
+                }
             }
         }
     }
@@ -71,6 +96,10 @@
 
         img {
             width: 140%;
+
+            @media (max-width: 750px) {
+                width: 500px
+            }
         }
     }
 }

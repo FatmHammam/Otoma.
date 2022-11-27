@@ -18,9 +18,30 @@
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 750px) {
+            background-size: 100% 550px;
+            flex-direction: column;
+        }
+
+        @media (max-width: 1400px) {
+            background-size: 100% 550px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         img {
             width: 40%;
-            min-height: 50vh;
+            min-height: 20vh;
+
+            @media (max-width: 750px) {
+                width: 70%;
+                height: 10px;
+            }
+
+            @media (max-width: 1400px) {
+                width: 80%;
+                height: 15px;
+            }
         }
 
         .description {
@@ -31,10 +52,32 @@
             justify-content: center;
             flex-direction: column;
 
+            @media (max-width: 750px) {
+                width: 80%;
+                align-items: center;
+            }
+
+            @media (max-width: 1400px) {
+                width: 90%;
+                align-items: center;
+            }
+
             h1 {
                 width: 50%;
                 margin: 0;
                 color: #fff;
+
+                @media (max-width: 750px) {
+                    width: 80%;
+                    align-items: center;
+                    margin-bottom: 5px;
+                }
+
+                @media (max-width: 1400px) {
+                    width: 90%;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
 
                 span {
                     color: #FFB281;
@@ -45,6 +88,16 @@
                 color: #fff;
                 opacity: 0.8;
                 width: 80%;
+
+                @media (max-width: 750px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 1400px) {
+                    font-size: 15px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
             }
 
             button {
@@ -56,6 +109,16 @@
                 border: none;
                 margin-right: 10px;
                 font-weight: bold;
+
+                @media (max-width: 750px) {
+                    width: 120px;
+                    font-size: 12px;
+                }
+
+                @media (max-width: 1400px) {
+                    width: 150px;
+                    font-size: 14px;
+                }
             }
         }
 

@@ -8,7 +8,6 @@ import Services from "../components/Services";
 import WhyOtoma from "../components/WhyOtoma";
 
 function Home() {
-    console.log("Home")
     return (
         <div>
             <Header />
