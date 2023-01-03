@@ -1,8 +1,13 @@
 import styles from '../assets/styles/Header.module.scss'
+import { useNavigate } from "react-router-dom";
 import Buy from '../assets/images/Buy.png'
 import { Nav, Navbar, Container } from "react-bootstrap";
 
 function Header() {
+    const navigate = useNavigate();
+    const goToRegister = () => {
+        navigate("/register");
+    }
     return (
         <div className={styles.container}>
             <Navbar expand="md" fixed="top" >
@@ -19,14 +24,14 @@ function Header() {
                         <div className={styles.links}>
                             <Nav >
                                 <Nav.Link href="/" className={styles.overview}>Overview</Nav.Link>
-                                <Nav.Link href="/">Product</Nav.Link>
-                                <Nav.Link href="/">Contact</Nav.Link>
+                                <Nav.Link href="/profile">Profile</Nav.Link>
+                                <Nav.Link href="/contact">Contact</Nav.Link>
                             </Nav>
                         </div>
                         <div className={styles.login}>
-                            <a href='#'>Log In</a>
+                            <a href='/login'>Log In</a>
                             <img src={Buy} />
-                            <button>Sign In</button>
+                            <button onClick={goToRegister}>Sign In</button>
                         </div>
                     </Navbar.Collapse>
                 </Container>

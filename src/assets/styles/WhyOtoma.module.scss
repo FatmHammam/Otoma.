@@ -164,66 +164,24 @@
 
     .phone {
         width: 200px;
-        transform: translate(-500px, 590px);
-
-        @media (max-width: 1400px) {
-            transform: translate(-490px, 890px);
-        }
-
-        @media (max-width: 1300px) {
-            transform: translate(-450px, 890px);
-        }
-
-        @media (max-width: 1200px) {
-            transform: translate(-420px, 890px);
-        }
-
-        @media (max-width: 1100px) {
-            transform: translate(-370px, 890px);
-        }
-
-        @media (max-width: 1000px) {
-            transform: translate(-320px, 890px);
-        }
+        position: absolute;
+        left: 7%;
+        margin-top: 120px;
 
         @media (max-width: 800px) {
-            transform: translate(-250px, 890px);
-        }
-
-        @media (max-width: 700px) {
-            transform: translate(-190px, 890px);
+            left: 0;
+            margin-right: 40px;
+            width: 140px;
         }
     }
 
     .hourglass {
-        transform: translate(540px, 180px);
-
-        @media (max-width: 1400px) {
-            transform: translate(450px, 180px);
-        }
-
-        @media (max-width: 1300px) {
-            transform: translate(410px, 180px);
-        }
-
-        @media (max-width: 1200px) {
-            transform: translate(360px, 180px);
-        }
-
-        @media (max-width: 1100px) {
-            transform: translate(320px, 180px);
-        }
-
-        @media (max-width: 1000px) {
-            transform: translate(280px, 200px);
-        }
+        position: relative;
+        left: 35%;
+        top: 150px;
 
         @media (max-width: 800px) {
-            transform: translate(240px, 200px);
-        }
-
-        @media (max-width: 700px) {
-            transform: translate(180px, 200px);
+            width: 100px;
         }
     }
 }

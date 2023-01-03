@@ -34,6 +34,10 @@
                 margin-right: 0;
             }
 
+            @media (max-width: 900px) {
+                font-size: 22px;
+            }
+
             span {
                 color: #FFB281;
                 margin-left: 5px;
